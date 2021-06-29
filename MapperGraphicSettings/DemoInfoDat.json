@@ -1,0 +1,59 @@
+﻿{
+  "_version": "2.0.0",
+  "_songName": "unknow",
+  "_songSubName": "",
+  "_songAuthorName": "unknow",
+  "_levelAuthorName": "unknow",
+  "_beatsPerMinute": 100,
+  "_shuffle": 0,
+  "_shufflePeriod": 0.5,
+  "_previewStartTime": 12,
+  "_previewDuration": 10,
+  "_songFilename": "HitSound.ogg",
+  "_coverImageFilename": "explorer_peoTfIBDt5.jpg",
+  "_environmentName": "DefaultEnvironment",
+  "_songTimeOffset": 0,
+  "_customData": {
+    "_contributors": [],
+    "_editors": {
+      "MMA2": {
+        "version": "4.8.2"
+      },
+      "_lastEditedBy": "MMA2"
+    }
+  },
+  "_difficultyBeatmapSets": [
+    {
+      "_beatmapCharacteristicName": "Standard",
+      "_difficultyBeatmaps": [
+        {
+          "_difficulty": "Expert",
+          "_difficultyRank": 7,
+          "_beatmapFilename": "ExpertStandard.dat",
+          "_noteJumpMovementSpeed": 12,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_difficultyLabel": "gamer",
+            "_editorOffset": 0,
+            "_editorOldOffset": 0,
+            "_warnings": [],
+            "_information": [
+              "test"
+            ],
+            "_suggestions": [],
+            "_requirements": [],
+            "_graphics": {
+              "_baseGame": [
+                "Bloom",
+                "Screen Distortion Effects"
+              ],
+              "_chroma": [
+                "Environment Enhancements"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

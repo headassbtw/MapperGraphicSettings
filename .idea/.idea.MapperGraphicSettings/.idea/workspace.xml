@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="initial commit">
+    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="">
       <changelist_data name="headassbtw (laptop)" email="" />
-      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Extensions/BeatmapDetailExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Extensions/GetJsonData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/Plugin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Extensions/GetJsonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Extensions/BeatmapDetailExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/PluginConfig.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,7 +56,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -76,6 +80,10 @@
       <option name="presentableId" value="Default" />
       <updated>1624940551998</updated>
       <workItem from="1624940553106" duration="1043000" />
+      <workItem from="1624942031867" duration="6338000" />
+      <workItem from="1624948444807" duration="65000" />
+      <workItem from="1624948568477" duration="18000" />
+      <workItem from="1624948599196" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1624940778090</created>
@@ -90,7 +98,8 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -129,6 +138,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
