@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="some jank ass UI that breaks practice mode for some dumb fucking reason" />
+    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="HEY RIDER DO YOU WANT TO LOG ME IN KTHX">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Views/Warning.bsml" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Views/Warning.bsml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/beat_saber.ico" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +36,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4a42bbfe-783b-49a6-ae1e-f1a4f144a2ad" />
+        <option name="url" value="https://github.com/headassbtw/MapperGraphicSettings" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,7 +112,7 @@
       <workItem from="1624954863670" duration="210000" />
       <workItem from="1624955173958" duration="35000" />
       <workItem from="1624955219025" duration="35000" />
-      <workItem from="1624955271442" duration="4954000" />
+      <workItem from="1624955271442" duration="8188000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1624940778090</created>
@@ -122,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624960185058</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HEY RIDER DO YOU WANT TO LOG ME IN KTHX">
+      <created>1624960256224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624960256224</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +195,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Kinda sorta works ish, mostly testing, but it can find stuff" />
     <MESSAGE value="some jank ass UI that breaks practice mode for some dumb fucking reason" />
-    <option name="LAST_COMMIT_MESSAGE" value="some jank ass UI that breaks practice mode for some dumb fucking reason" />
+    <MESSAGE value="HEY RIDER DO YOU WANT TO LOG ME IN KTHX" />
+    <option name="LAST_COMMIT_MESSAGE" value="HEY RIDER DO YOU WANT TO LOG ME IN KTHX" />
   </component>
 </project>

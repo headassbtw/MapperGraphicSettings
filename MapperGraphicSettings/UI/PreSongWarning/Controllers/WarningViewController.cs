@@ -8,7 +8,10 @@ using System.Text;
 using SongCore;
 using System.Reflection;
 using BeatSaberMarkupLanguage.Parser;
+using HMUI;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using static BeatSaberMarkupLanguage.Components.CustomListTableData;
 
 namespace MapperGraphicSettings.UI.PreSong.Controllers
@@ -21,8 +24,6 @@ namespace MapperGraphicSettings.UI.PreSong.Controllers
         public CustomPreviewBeatmapLevel level;
         public SongCore.Data.ExtraSongData songData;
         public SongCore.Data.ExtraSongData.DifficultyData diffData;
-        public bool wipFolder;
-
 
         private bool _buttonGlow = true;
         [UIValue("button-glow")]
@@ -34,6 +35,12 @@ namespace MapperGraphicSettings.UI.PreSong.Controllers
                 _buttonGlow = value;
                 NotifyPropertyChanged();
             }
+        }
+
+        [UIAction("#post-parse")]
+        internal void PostParse()
+        {
+            
         }
         
         [UIParams]
@@ -56,33 +63,18 @@ namespace MapperGraphicSettings.UI.PreSong.Controllers
 
         internal void Setup()
         {
+            
+            
             ShowButton();
             standardLevel = Resources.FindObjectsOfTypeAll<StandardLevelDetailViewController>().First();
             BSMLParser.instance.Parse(BeatSaberMarkupLanguage.Utilities.GetResourceContent(Assembly.GetExecutingAssembly(), "MapperGraphicSettings.UI.PreSongWarning.Views.Warning.bsml"), standardLevel.transform.Find("LevelDetail").gameObject, this);
             infoButtonTransform.localScale *= 0.7f;//no scale property in bsml as of now so manually scaling it
             (standardLevel.transform.Find("LevelDetail").Find("FavoriteToggle")?.transform as RectTransform).anchoredPosition = new Vector2(3, -2);
         }
-        [UIComponent("suggestion-list")] internal CustomListTableData SuggestionList = new CustomListTableData();
 
-        [UIValue("modal-height")] internal int ModalHeight = 20;
         
         internal void FireModal(List<string> suggestions = null)
         {
-            SuggestionList.data.Clear();
-            
-            if (suggestions == null)
-            {
-                suggestions = new List<string>
-                {
-                    "test string 1",
-                    "test string 2"
-                };
-            }
-            
-            foreach (var suggestion in suggestions)
-                SuggestionList.data.Add(new CustomListTableData.CustomCellInfo(suggestion));
-            ModalHeight = (suggestions.Count * 10) + 20;
-            //SuggestionList.tableView.ReloadData();
             parserParams.EmitEvent("open-modal");
         }
         [UIAction("continue")]
@@ -100,7 +92,12 @@ namespace MapperGraphicSettings.UI.PreSong.Controllers
             ButtonGlow = true;
             Harmony_Patches.PlayButtonHook.Halt = false;
         }
-        
+
+        [UIAction("select")]
+        public void DeviceSelect(TableView _, int row)
+        {
+        }
+
         internal void HideButton()
         {
             ButtonInteractable = false;
@@ -112,7 +109,6 @@ namespace MapperGraphicSettings.UI.PreSong.Controllers
         [UIAction("button-click")]
         internal void ShowRequirements()
         {
-
         }
     }
 }
