@@ -26,6 +26,12 @@ namespace MapperGraphicSettings
             Log = logger;
             Harmony = new Harmony("com.headassbtw.mappergraphicsettings");
             Harmony.PatchAll();
+            BS_Utils.Utilities.BSEvents.lateMenuSceneLoadedFresh += Events_menuSceneLoadedFresh;
+        }
+
+        private void Events_menuSceneLoadedFresh(ScenesTransitionSetupDataSO data)
+        {
+            UI.PreSong.Controllers.DisabledWarningViewController.instance.Setup();
         }
 
         #region BSIPA Config

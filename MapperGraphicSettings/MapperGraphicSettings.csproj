@@ -25,7 +25,13 @@
           <HintPath>$(BeatSaberDir)\Libs\0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="BeatmapCore, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\BeatmapCore.dll</HintPath>
+          <HintPath>$(BeatSaberDir)\Beat Saber_Data\Managed\BeatmapCore.dll</HintPath>
+        </Reference>
+        <Reference Include="BSML, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
+        </Reference>
+        <Reference Include="BS_Utils, Version=1.10.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>$(BeatSaberDir)\Plugins\BS_Utils.dll</HintPath>
         </Reference>
         <Reference Include="System.Data.DataSetExtensions" />
         <Reference Include="Main">
@@ -89,5 +95,9 @@
         <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
         <None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
         <None Include="MapperGraphicSettings.csproj.user" Condition="Exists('MapperGraphicSettings.csproj.user')" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="UI\PreSongWarning\Views\Warning.bsml" />
+      <EmbeddedResource Include="UI\PreSongWarning\Views\Warning.bsml" />
     </ItemGroup>
 </Project>

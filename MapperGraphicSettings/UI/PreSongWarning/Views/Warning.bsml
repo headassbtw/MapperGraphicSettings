@@ -1,0 +1,23 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+	<action-button id='info-button' text='MGS' active='~button-glow' interactable='~button-interactable' anchor-pos-x='21' anchor-pos-y='0' pref-width='12' pref-height='9' click-event='open-modal' on-click='button-click'></action-button>
+	<modal id="modal" show-event='open-modal' hide-event='close-modal' clickerino-offerino-closerino="true" anchor-pos-y='10.2' size-delta-x='65' size-delta-y='30' move-to-center='false'>
+		<vertical horizontal-fit='PreferredSize' vertical-fit='PreferredSize' anchor-pos-y='3' size-delta-y='0'>
+			<vertical pref-width='65' pref-height='30'>
+				<text text='The mapper has suggested graphics settings that differ from your current settings, would you like to change them?' word-wrapping='true' font-align='Center' font-size='4'/>
+				<horizontal>
+					<vertical>
+						<list id='settings-list' expand-cell='true' list-width='50'/>
+					</vertical>
+				</horizontal>
+				<horizontal>
+					<vertical>
+						<button text='Cancel' click-event='close-modal'/>
+					</vertical>
+					<vertical>
+						<primary-button text='Continue' on-click="continue"/>
+					</vertical>
+				</horizontal>
+			</vertical>
+		</vertical>
+	</modal>
+</bg>

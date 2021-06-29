@@ -13,23 +13,21 @@ namespace MapperGraphicSettings.Harmony_Patches
 {
     [HarmonyPatch(typeof(StandardLevelDetailView))]
     [HarmonyPatch("RefreshContent", MethodType.Normal)]
-    [HarmonyAfter("com.kyle1413.BeatSaber.SongCore")]
     internal class SongSelectPatch
     {
         internal static void Postfix(StandardLevelDetailView __instance,
             ref IDifficultyBeatmap ____selectedDifficultyBeatmap)
         {
-            
             List<string> bools = new List<string>();
             JObject diffBeatmap = (JObject) ____selectedDifficultyBeatmap.DiffBeatmapJson();
             if (diffBeatmap.TryGetValue("_customData", out var customData))
             {
                 Plugin.Log.Notice("Map has custom data");
-                JObject beatmapData = (JObject) customData;
-                
-                
+                JObject beatmapData = (JObject)customData;
+
                 if (beatmapData.TryGetValue("_graphics", out var graphics))
                 {
+                    //UI.PreSong.Controllers.DisabledWarningViewController.instance.ShowButton();
                     Plugin.Log.Notice("Map has graphics suggestions");
                     var baseGame = (JArray) graphics["_baseGame"];
                     var chroma = (JArray) graphics["_chroma"];
