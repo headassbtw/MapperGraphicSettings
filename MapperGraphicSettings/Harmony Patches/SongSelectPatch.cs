@@ -29,14 +29,25 @@ namespace MapperGraphicSettings.Harmony_Patches
                 {
                     //UI.PreSong.Controllers.DisabledWarningViewController.instance.ShowButton();
                     Plugin.Log.Notice("Map has graphics suggestions");
-                    var baseGame = (JArray) graphics["_baseGame"];
-                    var chroma = (JArray) graphics["_chroma"];
-                    foreach (var val in baseGame)
+                    var baseGame = (JObject) graphics["_baseGame"];
+                    if (baseGame != null)
                     {
-                        Plugin.Log.Notice($"Value {val.ToString()} in base game graphics settings");
+                        Setter.BaseGameSettingsChanger.Get();
+                        foreach (var val in baseGame)
+                        {
+                            var v2 = val.Value;
+                            Plugin.Log.Notice($"{val.Key} in base game graphics settings, with a value of {v2} and a type of {v2.GetType().ToString()}");
+                            
+                            if(val.Value.ToString().ToLower().Equals("true") || val.Value.ToString().ToLower().Equals("false"))
+                                Setter.BaseGameSettingsChanger.BaseGameBool((bool)val.Value, val.Key);
+                            else
+                                Setter.BaseGameSettingsChanger.BaseGameInt((int)val.Value, val.Key);
+                            
+                            
+                        }
+                        Setter.BaseGameSettingsChanger.Set();
                     }
-                    foreach(var val in chroma)
-                        Plugin.Log.Notice($"Value {val.ToString()} in Chroma graphics settings");
+                        
                 }
             }
 

@@ -43,13 +43,13 @@
             "_suggestions": [],
             "_requirements": [],
             "_graphics": {
-              "_baseGame": [
-                "Bloom",
-                "Screen Distortion Effects"
-              ],
-              "_chroma": [
-                "Environment Enhancements"
-              ]
+              "_baseGame": {
+                "Bloom": true,
+                "Screen Distortion Effects": true
+              },
+              "_chroma": {
+                "Environment Enhancements": true
+              }
             }
           }
         }
