@@ -82,6 +82,9 @@
             <HintPath>$(BeatSaberDir)\Plugins\SongCore.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="Zenject, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\Zenject.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="BeatSaberModdingTools.Tasks">

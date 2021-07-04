@@ -1,11 +1,14 @@
 ﻿using BS_Utils.Utilities;
+using HarmonyLib;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace MapperGraphicSettings.Setter
 {
     public class BaseGameSettingsChanger
     {
-        private static MainSettingsModelSO MainSettings = null;
+        internal static MainSettingsModelSO MainSettings { get; private set; }
+
 
         internal static void Get()
         {
@@ -15,7 +18,9 @@ namespace MapperGraphicSettings.Setter
         
         internal static void BaseGameBool(bool value, string name)
         {
-            if(name.ToLower().Equals("smoke"))
+            if(name.ToLower().Equals("staticlights"))
+                Harmony_Patches.Settings.Staticlights.ToggleEffectState(!value);
+            else if(name.ToLower().Equals("smoke"))
                 MainSettings.smokeGraphicsSettings.value = value;
             else if(name.ToLower().Equals("burnmarks"))
                 MainSettings.burnMarkTrailsEnabled.value = value;
@@ -35,7 +40,9 @@ namespace MapperGraphicSettings.Setter
         
         internal static void Set()
         {
+            
             MainSettings.Save();
+            //MainSettingsBestGraphicsValues.ApplyValues(MainSettings);
             SettingsFlowCoordinator.FindObjectOfType<SettingsFlowCoordinator>().SetPrivateField("_mainSettingsModel", MainSettings);
             MainSettings.Load(true);
         }
