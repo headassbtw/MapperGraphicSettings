@@ -20,6 +20,8 @@ namespace MapperGraphicSettings.Setter
         {
             if(name.ToLower().Equals("staticlights"))
                 Harmony_Patches.Settings.Staticlights.ToggleEffectState(!value);
+            else if(name.ToLower().Equals("debris"))
+                Harmony_Patches.Settings.Debris.ToggleDebris(value);
             else if(name.ToLower().Equals("smoke"))
                 MainSettings.smokeGraphicsSettings.value = value;
             else if(name.ToLower().Equals("burnmarks"))

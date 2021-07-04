@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/GameCoreSetupHook.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/StaticLights.cs" afterDir="false" />
+    <list default="true" id="c3fc0454-c485-4e4c-806b-a020f5a9f2ae" name="Default Changelist" comment="static lights">
+      <change afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/Debris.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MapperGraphicSettings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettings.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/StaticLights.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/StaticLights.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/Setter/BaseGameSettingsChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/Setter/BaseGameSettingsChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +32,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Extensions/GetJsonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/PlayButtonHook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/GameCoreSetupHook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Nick/RiderProjects/MapperGraphicSettings/MapperGraphicSettings/Setter/BaseGameSettingsChanger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Setter/BaseGameSettingsChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/MapperGraphicSettingsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/PluginConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/PlayButtonHook.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/GameCoreSetupHook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A0862963-5FA7-4EA2-8C4F-C280B999BBED/f6/6c43d6aa/Collections.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MapperGraphicSettings/DemoInfoDat.json" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,9 +56,10 @@
       <option value="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/SongSelectPatch.cs" />
       <option value="$PROJECT_DIR$/MapperGraphicSettings/DemoInfoDat.json" />
       <option value="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/GameCoreSetupHook.cs" />
+      <option value="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" />
       <option value="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/StaticLights.cs" />
       <option value="$PROJECT_DIR$/MapperGraphicSettings/Setter/BaseGameSettingsChanger.cs" />
-      <option value="$PROJECT_DIR$/MapperGraphicSettings/UI/PreSongWarning/Controllers/WarningViewController.cs" />
+      <option value="$PROJECT_DIR$/MapperGraphicSettings/Harmony Patches/Settings/Debris.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ubiAbO7I5PBtJiWk1OzaCfo1Qw" />
@@ -98,7 +103,7 @@
       <workItem from="1624940553106" duration="1043000" />
       <workItem from="1624977617579" duration="7231000" />
       <workItem from="1624985067766" duration="176000" />
-      <workItem from="1625411573399" duration="536000" />
+      <workItem from="1625411573399" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1624940778090</created>
@@ -114,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624983136106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="static lights i guess">
+      <created>1625412141247</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625412141247</updated>
+    </task>
+    <task id="LOCAL-00004" summary="static lights">
+      <created>1625412235539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625412235539</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +184,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="works in the config (POGGGG) but now i need to get it to work in-game, and then make them suggestions instead of forced" />
-    <option name="LAST_COMMIT_MESSAGE" value="works in the config (POGGGG) but now i need to get it to work in-game, and then make them suggestions instead of forced" />
+    <MESSAGE value="static lights i guess" />
+    <MESSAGE value="static lights" />
+    <option name="LAST_COMMIT_MESSAGE" value="static lights" />
   </component>
 </project>

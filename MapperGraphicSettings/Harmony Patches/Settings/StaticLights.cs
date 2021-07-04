@@ -17,9 +17,6 @@ namespace MapperGraphicSettings.Harmony_Patches.Settings {
 		static EnvironmentEffectsFilterPresetDropdown toggle1;
 		static EnvironmentEffectsFilterPresetDropdown toggle2;
 
-		static GameObject replaceLabel;
-		static ToggleWithCallbacks replaceToggle;
-
 		[HarmonyPriority(int.MinValue)]
 		static void Postfix(
 			PlayerSettingsPanelController __instance,
@@ -35,10 +32,10 @@ namespace MapperGraphicSettings.Harmony_Patches.Settings {
 		}
 
 		internal static void ToggleEffectState(bool setStatic) {
-			var theEffect = setStatic ? EnvironmentEffectsFilterPreset.NoEffects : EnvironmentEffectsFilterPreset.AllEffects;
+			var effect = setStatic ? EnvironmentEffectsFilterPreset.NoEffects : EnvironmentEffectsFilterPreset.AllEffects;
 
-			toggle1.SelectCellWithLightReductionAmount(theEffect);
-			toggle2.SelectCellWithLightReductionAmount(theEffect);
+			toggle1.SelectCellWithLightReductionAmount(effect);
+			toggle2.SelectCellWithLightReductionAmount(effect);
 
 			instance.SetIsDirty();
 		}
